@@ -1,1 +1,3 @@
-console.log("Hellow World");
+let x = "John Doe";
+
+let x = 0;

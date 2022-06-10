@@ -20,22 +20,39 @@ const a={
     forloop: function()
     {
         const fruits = ["Banana","Jackfruit","Mango","pineapple"];
-        for(i= 0; i< fruits.length; i++)
+        let flen = fruits.length;
+        text = "<ul>";
+        for(i= 0; i< flen; i++)
         {
-            console.log(fruits[i]);
+           console.log(fruits[i]);
         }
+        text += "</ul>";
+        
     },
 
 
 }
 
 const cars = ["Saab", "Volvo", "BMW"];
+function fruits()
+{
+const fruits = ["Banana","Jackfruit","Mango","pineapple"];
+let flen = fruits.length;
+        text = "<ul>";
+        for(i= 0; i< flen; i++)
+        {
+           text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+    }
 function forloop(){
     for(i=0; i < cars.length; i++)
     {
         console.log(cars[i]);
     }
 }
+
 document.getElementById("demo").innerHTML = cars;
 console.log(typeof cars)
 a.array1();
@@ -43,3 +60,4 @@ a.length();
 a.lastElement();
 a.forloop();
 forloop();
+fruits();

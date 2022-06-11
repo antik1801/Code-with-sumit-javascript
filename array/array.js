@@ -32,7 +32,17 @@ const a={
 
 
 }
-
+const obj={
+    name: "Antik",
+    age: 25,
+    sex: "Male",
+    subject: "CSE",
+    institute: "AIUB",
+    experience: "Java-Script",
+    
+}
+const foods=["bread","chicken","dal","Manni"];
+console.log(foods instanceof Array);
 const cars = ["Saab", "Volvo", "BMW"];
 function fruits()
 {
@@ -52,6 +62,13 @@ function forloop(){
         console.log(cars[i]);
     }
 }
+const fruit = ["Banana","Jackfruit","Mango","pineapple"];
+function Myfunction(value){
+
+    console.log(value);
+}
+
+fruit.forEach(Myfunction);
 
 document.getElementById("demo").innerHTML = cars;
 console.log(typeof cars)

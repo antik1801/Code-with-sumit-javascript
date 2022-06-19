@@ -19,7 +19,11 @@ const object = {
     {
         console.log(this.mathmax.apply(number));
     } ,
-    sortByYear: 
+    sortByYear: function()
+    {
+
+    },
+
 
 }
 console.log(fruits.sort());
@@ -29,5 +33,14 @@ object.sortingNumbers();
 console.log(number);
 console.log(number[0]);
 console.log(number[number.length - 1]);
+function displayCars()
+{
+    for(i=0;i<cars.length-1;i++)
+    {
+        document.getElementById("demo").innerHTML = cars[i]; 
+    }
+}
+
+console.log(cars.sort(function(a,b){ return a.year - b.year; }));
 //object.mathmax();
 // object.randomSorting();

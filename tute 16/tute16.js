@@ -27,6 +27,7 @@ const a ={
         console.log(lcase);
         console.log(Lcase);
     },
+    
     concate: function()
     {
         let text1 = "Hellow";

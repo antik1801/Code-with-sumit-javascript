@@ -1,0 +1,7 @@
+1.Write a html code and link js.
+2.write something in js and catch it through html -Get element by id
+3.Create a object named info and set information about bangladesh.
+4. create a string and slice it . 
+5. "Antik is living in dhaka" replace dhaka to khulna .
+6. "goal" convert it to uppercase; and turn it lowercase.
+7. "Hellow", "World" concade these two 

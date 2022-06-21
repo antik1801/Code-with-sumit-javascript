@@ -22,6 +22,7 @@ const a= {
         console.log(Number.NEGATIVE_INFINITY);
     }
 }
+
 a.toexponential();
 a.tofix();
 a.parsetint();

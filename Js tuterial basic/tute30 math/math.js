@@ -81,6 +81,12 @@ const math={
     {
         console.log(Math.cbrt(125));
     },
+    randint: function()
+    {
+        console.log("-----randint---");
+       console.log(Math.floor(Math.random()*10)); //output from 0-9
+       console.log(Math.floor(Math.random()*11)); //output from 0-9
+    },
 
 }
 math.round();
@@ -99,3 +105,4 @@ math.log2();
 math.log10();
 math.acos();
 math.cbrt();
+math.randint();

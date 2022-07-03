@@ -29,6 +29,7 @@ const object = {
 console.log(fruits.sort());
 // console.log(number.sort());
 console.log(fruits.reverse());
+console.log("---------------------------------")
 object.sortingNumbers();
 console.log(number);
 console.log(number[0]);

@@ -1,4 +1,4 @@
-var firstname = "John"
+/*var firstname = "John"
 var lastname = "Doe"
 var number = [23,12,7,58,45,69,14,25];
 const object ={
@@ -107,3 +107,29 @@ console.log(number);
 object.arrayit(number);
 object.valueg(number);
 
+*/
+
+const arr = ["Lemon","Pineapple","guava","mango"];
+
+const object = {
+    callarr: function()
+    {
+        console.log(arr);
+    },
+    Length: function()
+    {
+        console.log(arr.length);
+    },
+    LastElement: function()
+    {
+        console.log(arr.length-1);
+    },
+    forLoop: function()
+    {
+        var len= arr.length;
+        
+    },
+}
+object.callarr();
+object.Length();
+object.LastElement();

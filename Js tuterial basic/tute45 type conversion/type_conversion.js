@@ -1,3 +1,4 @@
+let x = 10.5;
 const object = {
     stringToNumber: function()
     {
@@ -9,7 +10,9 @@ const object = {
     unary: function()
     {
 
-    }
+    },
 }
 object.stringToNumber();
 object.unary();
+console.log(x.toPrecision(3))
+console.log(x.toFixed());

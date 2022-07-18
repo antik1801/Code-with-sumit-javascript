@@ -109,27 +109,74 @@ object.valueg(number);
 
 */
 
-const arr = ["Lemon","Pineapple","guava","mango"];
+// const arr = ["Lemon","Pineapple","guava","mango"];
 
-const object = {
-    callarr: function()
-    {
-        console.log(arr);
-    },
-    Length: function()
-    {
-        console.log(arr.length);
-    },
-    LastElement: function()
-    {
-        console.log(arr.length-1);
-    },
-    forLoop: function()
-    {
-        var len= arr.length;
+// const object = {
+//     callarr: function()
+//     {
+//         console.log(arr);
+//     },
+//     Length: function()
+//     {
+//         console.log(arr.length);
+//     },
+//     LastElement: function()
+//     {
+//         console.log(arr.length-1);
+//     },
+//     forLoop: function()
+//     {
+//         var len= arr.length;
         
-    },
+//     },
+// }
+// object.callarr();
+// object.Length();
+// object.LastElement();
+
+// Tute 47 - Regular Expression problem solving
+
+/*
+Do a javascript program to test the forst charector ofa string is uppercase od not
+*/
+
+const text="This is the text file";
+
+function Upper_Case()
+{
+    regex = /^[A-Z]/;
+    if(regex.test(text))
+    {
+        console.log("First charector is uppercase");
+    }
+    else{
+        console.log("First charector is not uppercse");
+    }
 }
-object.callarr();
-object.Length();
-object.LastElement();
+Upper_Case();
+
+
+// Problem  2 
+
+// Check a credit card number formet
+
+/*
+    Check credit card details whether its valid or invalid
+    Here are some format of some well-known credit cards.
+
+    American Express: Starting with 34 or 37, length 15 digits.
+    Visa : Starting with 4, length 13 or 16 digits.
+    MasterCard :- Starting with 51 through 55, length 16 digits.
+    Discover :- Starting with 6011, length 16 digits or starting with 5, length 15 digits.
+    Diners Club :- Starting with 300 through 305, 36, or 38, length 14 digits.
+    JCB :- Starting with 2131 or 1800, length 15 digits or starting with 35, length 16 digits.
+*/
+
+function isCreditCard(Card_no)
+{
+    regEx = /^(?:(4[0-9]{12}(?:[0-9]{3}?)|(5[1-5][0-9]{13})|(6(?:011|5[0-9]{2})[0-9]{12}))) /;
+
+}
+
+isCreditCard("378282246310006");
+

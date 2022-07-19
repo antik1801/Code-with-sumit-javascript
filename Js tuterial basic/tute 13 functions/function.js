@@ -6,9 +6,10 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 function Palindrome(test)
 {
     
-    var result = Array.from(test);
-    var main = result.reverse();
+    var result = new const;
+    var main =  result.reverse();
     console.log(result);
+    console.log(main);
     if(result === main)
     {
         console.log("Palindrome");

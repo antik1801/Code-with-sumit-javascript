@@ -38,3 +38,22 @@ print();
 // }
 
 // area(5,6,7)
+
+
+/*
+1. Write a JavaScript program to calculate the factorial of a number. Go to the editor
+In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
+*/
+
+function facterial(value)
+{
+    const fact =new fact;
+  
+    fact = 1;
+    for(var i= value; i>=1 ; i--)
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
+console.log(facterial(5));

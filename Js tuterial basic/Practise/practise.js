@@ -205,3 +205,7 @@ function Validate_NAN(value)
 {
     
 }
+
+// window.alert("fuckyou");
+console.log(typeof(student));
+// console.log(sclas instanceof student);

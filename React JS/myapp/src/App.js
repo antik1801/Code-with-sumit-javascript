@@ -1,7 +1,10 @@
-
+import React from "react";
 function App() {
   return (
-   <div>Hellow world</div>
+   <div>
+    <h1>Hellow world</h1>
+    console.log("Hagu");
+    </div>
   );
 }
 

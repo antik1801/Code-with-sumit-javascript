@@ -27,24 +27,35 @@ class Clock extends React.Component {
         });
     };
     
-    handleClick =()=> {
+    handleClick =(local)=> {
         this.setState({
-           local:'en-US',
+           local
         });
     };
     
     render() {
-        console.log("Clock component render");
+        
         const { date, local } = this.state;
+        // let button;
+        // if(local==='bn-Bd'){
+        //   button =  (<Button change={this.handleClick} local="en-us">
+        //     click here
+        //   </Button>);
+        // }
+        // else
+        // {
+        //     button = (<Button change={this.handleClick} local="bn-BD">
+        //     click here
+        //   </Button>);
+        // }
         return (
             <div>
                 <h1 className="heading">
                     <span className="text">{date.toLocaleTimeString(local)}</span>
                 </h1>
-              <Button change={this.handleClick} local="en-us">
-                click here
-              </Button>
-            </div>
+            {local ==='bn-BD' ? (<Button change={this.handleClick} local="en-us" show={false} enable={true}/>) : (<Button change={this.handleClick} local="bn-BD" show={true} enable={false}/>)}
+          </div>
+                
         );
     }
 }

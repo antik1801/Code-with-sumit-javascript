@@ -13,10 +13,18 @@ class Button extends React.Component
 
     }
     render(){
-        console.log("Button Component Render");
-        const {change} = this.props;
+        
+        const {change,local,show,enable} = this.props;
+        // if(!enable){
+        //     return null;
+        // }
         return(
-            <button type='button' onClick={change}>Clock Here</button>
+            <>
+            <button type='button' onClick={()=>change(local)}>
+                {local==='bn-BD' ? 'Click Her ' :' ক্লিক করুন'}
+            </button>
+            {show &&(<p> Hello</p>)}
+            </>
         )
     }
 }
